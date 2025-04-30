@@ -12,11 +12,33 @@
       
        <!-- Put this inside the <a-scene> -->
       <a-entity 
-      ply-model="src:dog.ply"
-      position="0 1 -2"
+      ply-model="src:webVR worm eating a apple-2.ply"
+      position="0 1 -3"
       rotation="-90 0 90"
       ></a-entity>
-                 
+      <a-entity
+       ply-model="src:webVR worm eating a apple-1.ply" 
+       position="0 1 -4"
+       rotation="-90 0 90"
+       ainmation="
+       property:rotation;
+       from:0 0 90;
+       to:0 180 90;
+       dur:2000;
+       loop:true;"
+       ></a-entity>  
+       <a-entity
+       ply-model="src:webVR worm eating a apple-0.ply"  
+       position="0 1 -4"  
+       rotation="-90 0 90"   
+       animation="
+       property:position;
+       from:0 1 -4;
+       to:-1 1 -4;
+       dur:2000;
+       loop:true;
+       "
+       ></a-entity>
     </a-scene>
   </body>
 </html>
